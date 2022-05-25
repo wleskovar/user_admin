@@ -1,0 +1,45 @@
+<%- include('../partials/head')  %>
+
+<body>
+    <%- include('../partials/header')  %> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-0">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title text-muted text-center">Ingreso al sistema</h4>
+                                <h6 class="card-subtitle text-muted text-end">Formulario de login</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <form action="">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3">
+                                                <input type="email" name='correo' class="form-control" placeholder="" id="correo">
+                                                <label for="correo">Correo</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" name='password' class="form-control" placeholder="" id="password">
+                                                <label for="password">Clave</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" name="recordar_usuario" id="recordar_usuario">
+                                                <label class="form-check-label" for="recordar_usuario">recordar mi usuario</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mt-4">Enviar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer text-muted text-end">
+                                <h6>Administración del sistema</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

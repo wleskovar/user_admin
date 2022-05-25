@@ -1,0 +1,77 @@
+<%- include('../partials/head')  %>
+
+<body>
+    <%- include('../partials/header')  %> 
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="row mt-0">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header" method="POST" enctype="multipart/form-data" >
+                                <h4 class="card-title text-muted text-center">Registro de usuario</h4>
+                                <h6 class="card-subtitle text-muted text-end">Formulario de registro de empleados</h4>
+                            </div>
+                            <div class="card-body bg-light">
+                                <form action="/register" >
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" name='nombre' class="form-control" placeholder="" id="nombre">
+                                                <label for="Nombre">Nombre</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="text" name='apellido' class="form-control" placeholder="" id="apellido">
+                                                <label for="apellido">Apellido</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="email" name='correo' class="form-control" placeholder="" id="correo">
+                                                <label for="correo">Correo</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" name='password' class="form-control" placeholder="" id="password">
+                                                <label for="password">Clave</label>
+                                            </div>
+                                            <div class="form-floating mb-3">
+                                                <input type="password" name='password_2' class="form-control" placeholder="" id="password_2">
+                                                <label for="password_2">Validación de la clave</label>
+                                            </div>
+                                            <div class="col-12 col-sm-6 mb-0 fs-6">
+                                                <label class="form-label">Rol dentro del sistema</label>            
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="administrador" value= '1' id="rol">
+                                                    <label for="rol" class="form-check-label">Administrador</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input type="radio" class="form-check-input" name="data_entry" value='2' id="rol" checked>
+                                                    <label for="rol" class="form-check-label">Data entry</label>
+                                                </div>
+            
+                                            </div>
+                                            <button type="submit" class="btn btn-primary mt-4">Registrar</button>
+                                            <button type="reseat" class="btn btn-primary mt-4">Borrar</button>
+                                            <div class="row mt-0">
+                                                <div class="col-6">
+                                                    <div class="input-group">
+                                                        <span class="input-group-text">Foto</span>
+                                                        <input type="file" name='foto' class="form-control" id="foto"
+                                                                 accept= ".jpeg, .png, .webp" aria-lable="Foto " disabled>
+                                                        <button type="submit" class="btn btn-primary" disabled>Subir</button>
+        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer text-muted text-end">
+                                <h6>Administración del sistema</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
